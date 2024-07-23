@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Black Hole Size Comparator</title>
+  </head>
+  <body>
+    <h2>BLACK HOLE SIZE COMPARATOR</h2>
+
+    <div>
+      <label for="blackhole1">Select blackhole 1:</label>
+      <select id="blackhole1" class="btn">
+        <option value="SagittariusA">SagittariusA</option>
+        <option value="M87">M87</option>
+        <option value="CygnusX1">CygnusX-1</option>
+        <option value="Gargantua">Gargantua</option>
+      </select>
+    </div>
+    <div>
+      <label for="blackhole2">Select blackhole 2:</label>
+      <select id="blackhole2" class="btn">
+        <option value="SagittariusA">SagittariusA</option>
+        <option value="M87">M87</option>
+        <option value="CygnusX1">CygnusX-1</option>
+        <option value="Gargantua">Gargantua</option>
+      </select>
+    </div>
+    <button onclick="blackholeSize()" class="btn">Compare Sizes</button>
+    <div id="result"></div>
+
+    <script src="black_hole.js"></script>
+  </body>
+</html>

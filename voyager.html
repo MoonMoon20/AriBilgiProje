@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Voyager Travel Simulator</title>
+  </head>
+  <body>
+    <h2>VOYAGER TRAVEL SIMULATOR</h2>
+
+    <div>
+      <label for="timeFrame">Select blackhole 1:</label>
+      <select id="timeFrame" class="btn">
+        <option value="10,000 Years">In 10,000 Years</option>
+        <option value="100,000 Years">In 100,000 Years</option>
+        <option value="1 Million Years">In 1 Million Years</option>
+        <option value="10 Million Years">In 10 Million Years</option>
+      </select>
+    </div>
+    <button onclick="travelTime()" class="btn">Simulate</button>
+    <div id="result"></div>
+
+    <script src="voyager.js"></script>
+  </body>
+</html>

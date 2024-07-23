@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>How Fast You Can Go To a Star</title>
+  </head>
+  <body>
+    <h2>HOW FAST YOU CAN GO TO A STAR</h2>
+
+    <div>
+      <label for="star1">Select Star 1:</label>
+      <select id="star1" class="btn">
+        <option value="Sun">Sun</option>
+        <option value="Betelgeuse">Betelgeuse</option>
+        <option value="Vega">Vega</option>
+      </select>
+    </div>
+    <div>
+      <label for="star2">Select Star 2:</label>
+      <select id="star2" class="btn">
+        <option value="Sun">Sun</option>
+        <option value="Betelgeuse">Betelgeuse</option>
+        <option value="Vega">Vega</option>
+      </select>
+    </div>
+    <button onclick="howFast()" class="btn">Learn How Fast</button>
+    <div id="result"></div>
+
+    <script src="star.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>How Fast You Can Go</title>
+  </head>
+  <body>
+    <h2>HOW FAST I CAN GO TO THIS PLANET</h2>
+
+    <div>
+      <label for="planet1">Select Planet 1:</label>
+      <select id="planet1" class="btn">
+        <option value="Earth">Earth</option>
+      </select>
+    </div>
+    <div>
+      <label for="planet2">Select Planet 2:</label>
+      <select id="planet2" class="btn">
+        <option value="Earth">Earth</option>
+        <option value="Mars">Mars</option>
+        <option value="Jupiter">Jupiter</option>
+        <option value="Venus">Venus</option>
+      </select>
+    </div>
+    <button onclick="howFast()" class="btn">Learn How Fast</button>
+    <div id="result"></div>
+
+    <script src="planet.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Galaxy Size Comparator</title>
+  </head>
+  <body>
+    <h2>GALAXY SIZE COMPARATOR</h2>
+
+    <div>
+      <label for="galaxy1">Select Galaxy 1:</label>
+      <select id="galaxy1" class="btn">
+        <option value="MilkyWay">Milky Way</option>
+        <option value="Andromeda">Andromeda</option>
+        <option value="LMC">LMC</option>
+        <option value="M83">M83</option>
+      </select>
+    </div>
+    <div>
+      <label for="galaxy2">Select Galaxy 2:</label>
+      <select id="galaxy2" class="btn">
+        <option value="Milky Way">Milky Way</option>
+        <option value="Andromeda">Andromeda</option>
+        <option value="LMC">LMC</option>
+        <option value="M83">M83</option>
+      </select>
+    </div>
+    <button onclick="compareGalaxySize()" class="btn">Compare Size</button>
+    <div id="result"></div>
+
+    <script src="galaxy.js"></script>
+  </body>
+</html>
