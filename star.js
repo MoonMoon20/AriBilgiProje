@@ -120,50 +120,25 @@ function compareStarVolume() {
   }
 }
 
-function howFastGalaxy() {
-  const galaxy1 = document.getElementById("galaxy1").value;
-  const galaxy2 = document.getElementById("galaxy2").value;
+function howFast() {
+  const star1 = document.getElementById("star1").value;
+  const star2 = document.getElementById("star2").value;
 
-  const galaxyDistance = {
-    MilkyWay: 0,
-    Andromeda: 2537000,
-    LMC: 163000,
-    M83: 15000000,
+  const travelTimes = {
+    Sun: "6 months (Parker Solar Probe)",
+    Betelgeuse: "640 years (Current Technology)",
+    Vega: "25 years (Voyager Speed)",
   };
-
-  const voyagerSpeedLyPerYear = 17 / 9.461e12;
 
   const resultElement = document.getElementById("result");
   resultElement.innerHTML = "";
 
-  if (
-    galaxyDistance.hasOwnProperty(galaxy1) &&
-    galaxyDistance.hasOwnProperty(galaxy2)
-  ) {
-    const distance1 = galaxyDistance[galaxy1];
-    const distance2 = galaxyDistance[galaxy2];
+  if (travelTimes.hasOwnProperty(star1) && travelTimes.hasOwnProperty(star2)) {
+    let resultMessage = `<br>Travel time to ${star2}: ${travelTimes[star2]}`;
 
-    const travelTime1 = distance1 / voyagerSpeedLyPerYear;
-    const travelTime2 = distance2 / voyagerSpeedLyPerYear;
-
-    const difference = Math.abs(travelTime2 - travelTime1);
-
-    let resultMessage = "";
-    if (travelTime2 > travelTime1) {
-      resultMessage = `Traveling to ${galaxy2} would take ${difference.toExponential(
-        2
-      )} years longer than traveling to ${galaxy1}.`;
-    } else if (travelTime2 < travelTime1) {
-      resultMessage = `Traveling to ${galaxy1} would take ${difference.toExponential(
-        2
-      )} years longer than traveling to ${galaxy2}.`;
-    } else {
-      resultMessage = `Traveling to ${galaxy1} and ${galaxy2} would take the same amount of time.`;
-    }
-
-    // Result
     resultElement.innerHTML = resultMessage;
   } else {
-    resultElement.innerHTML = "Please select valid galaxies for comparison.";
+    resultElement.innerHTML = "Please select valid stars for comparison.";
   }
 }
+
